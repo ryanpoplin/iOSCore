@@ -36,6 +36,7 @@
 		5ADA3DA51A8DCB7400CF486A /* iOSCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ADA3DAA1A8DCB7400CF486A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5ADA3DAB1A8DCB7400CF486A /* iOSCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSCoreTests.swift; sourceTree = "<group>"; };
+		5ADA3DB51A8DD6C600CF486A /* testing.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = testing.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +78,7 @@
 		5ADA3D8F1A8DCB7400CF486A /* iOSCore */ = {
 			isa = PBXGroup;
 			children = (
+				5ADA3DB51A8DD6C600CF486A /* testing.playground */,
 				5ADA3D921A8DCB7400CF486A /* AppDelegate.swift */,
 				5ADA3D971A8DCB7400CF486A /* ViewController.swift */,
 				5ADA3D9C1A8DCB7400CF486A /* Images.xcassets */,
