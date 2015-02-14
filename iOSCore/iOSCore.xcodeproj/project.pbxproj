@@ -13,6 +13,7 @@
 		5ADA3D9D1A8DCB7400CF486A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5ADA3D9C1A8DCB7400CF486A /* Images.xcassets */; };
 		5ADA3DA01A8DCB7400CF486A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5ADA3D9E1A8DCB7400CF486A /* LaunchScreen.xib */; };
 		5ADA3DAC1A8DCB7400CF486A /* iOSCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADA3DAB1A8DCB7400CF486A /* iOSCoreTests.swift */; };
+		5ADA3DB91A8F133000CF486A /* ObjCTesting.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADA3DB81A8F133000CF486A /* ObjCTesting.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,9 @@
 		5ADA3DAA1A8DCB7400CF486A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5ADA3DAB1A8DCB7400CF486A /* iOSCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSCoreTests.swift; sourceTree = "<group>"; };
 		5ADA3DB51A8DD6C600CF486A /* testing.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = testing.playground; sourceTree = "<group>"; };
+		5ADA3DB61A8F133000CF486A /* iOSCore-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOSCore-Bridging-Header.h"; sourceTree = "<group>"; };
+		5ADA3DB71A8F133000CF486A /* ObjCTesting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjCTesting.h; sourceTree = "<group>"; };
+		5ADA3DB81A8F133000CF486A /* ObjCTesting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjCTesting.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,9 @@
 				5ADA3DB51A8DD6C600CF486A /* testing.playground */,
 				5ADA3D921A8DCB7400CF486A /* AppDelegate.swift */,
 				5ADA3D971A8DCB7400CF486A /* ViewController.swift */,
+				5ADA3DB61A8F133000CF486A /* iOSCore-Bridging-Header.h */,
+				5ADA3DB71A8F133000CF486A /* ObjCTesting.h */,
+				5ADA3DB81A8F133000CF486A /* ObjCTesting.m */,
 				5ADA3D9C1A8DCB7400CF486A /* Images.xcassets */,
 				5ADA3D9E1A8DCB7400CF486A /* LaunchScreen.xib */,
 				5ADA3D941A8DCB7400CF486A /* iOSCore.xcdatamodeld */,
@@ -213,6 +220,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5ADA3DB91A8F133000CF486A /* ObjCTesting.m in Sources */,
 				5ADA3D981A8DCB7400CF486A /* ViewController.swift in Sources */,
 				5ADA3D961A8DCB7400CF486A /* iOSCore.xcdatamodeld in Sources */,
 				5ADA3D931A8DCB7400CF486A /* AppDelegate.swift in Sources */,
@@ -332,9 +340,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = iOSCore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iOSCore/iOSCore-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -342,9 +353,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = iOSCore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iOSCore/iOSCore-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -401,6 +414,7 @@
 				5ADA3DB11A8DCB7400CF486A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5ADA3DB21A8DCB7400CF486A /* Build configuration list for PBXNativeTarget "iOSCoreTests" */ = {
 			isa = XCConfigurationList;
@@ -409,6 +423,7 @@
 				5ADA3DB41A8DCB7400CF486A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
