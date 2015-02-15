@@ -1,5 +1,5 @@
 //
-//  AppDelegate.swift   
+//  AppDelegate.swift
 //  iOSCore
 //
 //  Created by Byrdann Fox on 2/13/15.
